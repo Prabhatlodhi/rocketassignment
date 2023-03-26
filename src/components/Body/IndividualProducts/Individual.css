@@ -18,8 +18,7 @@
 
 .rating{
     background-color: rgb(73, 208, 82); 
-    border-radius: 25px;
-    position: absolute;
+    border-radius: 25px; 
     bottom: 500px;
     left: 1000px;
     padding: 25px;

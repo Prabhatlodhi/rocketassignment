@@ -33,7 +33,7 @@ const Body = () => {
 if(!filterproduct) return null;
   return (
     <>
-      <div>
+      <div className="bodyParentWrapper">
         <input type="text" value={searchText}  onChange={(e) => setsearchText(e.target.value)}/>
         <button
          onClick={() => {
