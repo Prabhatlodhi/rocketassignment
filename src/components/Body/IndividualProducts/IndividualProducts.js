@@ -2,13 +2,23 @@ import React from "react";
 import { useParams } from "react-router-dom";
 import CustomHooks from "../../CustomHooks/CustomHooks";
 import "./Individual.css";
+import { additem } from "../../../redux/CartSlice";
+
+import { useDispatch } from "react-redux";
 
 const IndividualProducts = () => {
   const { id } = useParams();
 
   // console.log(id)
   const oneProduct = CustomHooks(Number(id));
-  console.log(oneProduct);
+  // console.log(oneProduct);
+
+  const dispatch = useDispatch();
+
+  const addProduct = (oneProduct)=>{
+    // console.log({...item[0]})
+    dispatch(additem(oneProduct))
+  }
 
   if (!oneProduct) return null;
   return (
@@ -27,7 +37,9 @@ const IndividualProducts = () => {
         </div>
         <h2>{oneProduct?.title}</h2>
         <p>{oneProduct?.description}</p>
+        <button onClick={() => addProduct(oneProduct)}>Add to Cart</button>
       </div>
+      
     </div>
   );
 };

@@ -8,10 +8,13 @@ import Cart from "./components/Header/NavItems/Cart";
 import { createBrowserRouter, Outlet } from "react-router-dom";
 import ErrorPage from "./components/Body/ErrorPage/ErrorPage";
 import IndividualProducts from "./components/Body/IndividualProducts/IndividualProducts";
+import { Provider } from "react-redux";
+import store from "./redux/store"
 
 function App() {
   return (
     <>
+    <Provider store={store}  >
       <div className="App">
         <Header />
         {/* <RouterProvider router={appRouter} /> */}
@@ -21,6 +24,7 @@ function App() {
 
         <Footer />
       </div>
+      </Provider>
     </>
   );
 }
