@@ -1,0 +1,25 @@
+.productImage img{
+    width: 160px;
+    height: 160px;
+}
+
+.productImage{
+    text-align: center;
+}
+
+.productCard{
+    border: 1px solid red;
+    width: 320px;
+    height: 400px;
+    margin: 20px;
+    padding: 15px;
+}
+
+.productCard p{
+    font-size: 12px;
+}
+
+.ratingList li{
+    list-style: none;
+    font-size: 14px;
+}

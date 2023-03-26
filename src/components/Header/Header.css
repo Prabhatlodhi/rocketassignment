@@ -1,0 +1,17 @@
+.headerWrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 60px;
+    box-shadow: 0px 0px 10px grey;
+}
+
+.navItems ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 0px 15px;
+}
+
+.imagewrapper img{
+width: 40px;
+}
