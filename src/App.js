@@ -5,20 +5,19 @@ import Header from "./components/Header/Header";
 import Contact from "./components/Header/NavItems/Contact";
 import AboutUs from "./components/Header/NavItems/AboutUs";
 import Cart from "./components/Header/NavItems/Cart";
-// import IndividualProducts from "./components/Body/IndividualProducts/IndividualProducts";
-import { createBrowserRouter, Outlet  } from "react-router-dom";
+import { createBrowserRouter, Outlet } from "react-router-dom";
 import ErrorPage from "./components/Body/ErrorPage/ErrorPage";
+import IndividualProducts from "./components/Body/IndividualProducts/IndividualProducts";
 
 function App() {
   return (
     <>
       <div className="App">
-
         <Header />
-      {/* <RouterProvider router={appRouter} /> */}
+        {/* <RouterProvider router={appRouter} /> */}
         {/* <Outlet /> */}
 
-        <Outlet/>
+        <Outlet />
 
         <Footer />
       </div>
@@ -47,10 +46,13 @@ export const appRouter = createBrowserRouter([
       {
         path: "cart",
         element: <Cart />,
-      }
-    ]
+      },
+      {
+        path: "/individualproducts/:id",
+        element: <IndividualProducts />,
+      },
+    ],
   },
-  
 ]);
 
 export default App;

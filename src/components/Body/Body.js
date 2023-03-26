@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import ProductList from "./ProductList.js/ProductList";
 import { ALL_PRODUCT_API } from "../../constant/constant";
 import "./Body.css";
+import { Link } from "react-router-dom";
 
 function filterData(searchText, allproduct) {
     const filterDatax = allproduct.filter((prodt) =>
@@ -46,7 +47,7 @@ if(!filterproduct) return null;
       </div>
       <div className="bodyWrapper">
         {filterproduct.map((prod) => {
-          return <ProductList alldata={prod} key={prod.id}/>;
+          return <Link className="Link" key={prod.id}  to={"/individualproducts/" + prod.id } ><ProductList alldata={prod} /></Link> ;
         })}
       </div>
     </>

@@ -1,3 +1,8 @@
-/* .ErrorImage img{
-    width:  ;
-} */
+.ErrorImage img{ 
+    height: 99vh;
+}
+
+.ErrorImage  {
+    text-align: center;
+    background-color: black;
+}

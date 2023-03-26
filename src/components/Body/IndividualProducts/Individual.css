@@ -1,0 +1,27 @@
+.singleProduct{
+    width: 1000px;
+    display: flex;
+    align-items: center;
+    border: 1px solid grey;
+    margin: 0px auto;
+    padding: 25px;
+}
+
+.singleProduct img{
+    width: 450px;
+    height: 450px;
+}
+
+.textWrapper{
+    margin: 50px;
+}
+
+.rating{
+    background-color: rgb(73, 208, 82); 
+    border-radius: 25px;
+    position: absolute;
+    bottom: 500px;
+    left: 1000px;
+    padding: 25px;
+}
+ 
