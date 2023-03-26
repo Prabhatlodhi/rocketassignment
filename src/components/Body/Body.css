@@ -22,7 +22,7 @@ input{
     padding-left: 15px;
 }
 
-button{
+#searchButton {
     padding: 9px;
     height: 40px;
     margin: 10px 0px;

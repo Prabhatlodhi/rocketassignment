@@ -35,7 +35,7 @@ if(!filterproduct) return null;
     <>
       <div className="bodyParentWrapper">
         <input type="text" value={searchText}  onChange={(e) => setsearchText(e.target.value)}/>
-        <button
+        <button id="searchButton"
          onClick={() => {
             const data = filterData(searchText, allproduct);
 
