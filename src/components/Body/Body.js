@@ -8,7 +8,6 @@ function filterData(searchText, allproduct) {
     const filterDatax = allproduct.filter((prodt) =>
     prodt?.title.toLowerCase()?.includes(searchText?.toLowerCase())
     );
-  
     return filterDatax;
   }
 
@@ -25,14 +24,13 @@ const Body = () => {
   async function fetch_all_products() {
     const data = await fetch(ALL_PRODUCT_API);
     const json = await data.json();
-    // console.log(json);
     setallProduct(json);
     setfilterProduct(json);
   }
 
 if(!filterproduct) return null;
   return (
-    <>
+    <div className="MainWrapper">
       <div className="bodyParentWrapper">
         <input type="text" value={searchText}  onChange={(e) => setsearchText(e.target.value)}/>
         <button id="searchButton"
@@ -50,7 +48,7 @@ if(!filterproduct) return null;
           return <Link className="Link" key={prod.id}  to={"/individualproducts/" + prod.id } ><ProductList alldata={prod} /></Link> ;
         })}
       </div>
-    </>
+    </div>
   );
 };
 

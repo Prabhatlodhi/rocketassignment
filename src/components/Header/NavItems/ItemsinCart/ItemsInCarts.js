@@ -1,6 +1,15 @@
 import React from "react";
 
+import { removeProduct } from "../../../../redux/CartSlice"; 
+import { useDispatch } from "react-redux";
+
 const ItemsInCarts = ({ singleProd }) => {
+  
+  const dispatch = useDispatch();
+  const handleRemoveIndi = (singleProd) => {
+    dispatch(removeProduct(singleProd));
+  };
+
   return (
     <div className="singleProduct">
       <div>
@@ -16,6 +25,9 @@ const ItemsInCarts = ({ singleProd }) => {
         </div>
         <h2>{singleProd?.title}</h2>
         <p>{singleProd?.description}</p>
+        <button onClick={() => handleRemoveIndi(singleProd)}>
+          Remove Item
+        </button>
       </div>
     </div>
   );

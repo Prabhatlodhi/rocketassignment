@@ -2,7 +2,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    align-items: center;
+    align-items: center; 
 }
 
 .Link{
@@ -12,6 +12,12 @@
 
 .bodyParentWrapper{
     text-align: center;
+    
+}
+
+.MainWrapper{
+
+    padding-top: 90px;
 }
 
 input{

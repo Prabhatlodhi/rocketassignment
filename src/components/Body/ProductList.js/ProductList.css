@@ -3,16 +3,23 @@
     height: 160px;
 }
 
+.ProductRating{
+    background-color: lightblue;
+    margin: 8px;
+    padding: 5px;
+}
+
 .productImage{
     text-align: center;
 }
 
 .productCard{
-    border: 1px solid red;
+    border: 1px solid rgb(166, 179, 164);
     width: 320px;
     height: 400px;
     margin: 20px;
     padding: 15px;
+    border-radius: 9px;
 }
 
 .productCard p{

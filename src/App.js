@@ -32,12 +32,12 @@ function App() {
 export const appRouter = createBrowserRouter([
   {
     path: "/",
-    element: <App />,
+    element: <App   />,
     errorElement: <ErrorPage />,
     children: [
       {
         path: "/",
-        element: <Body />,
+        element: <Body/>,
       },
       {
         path: "contact",

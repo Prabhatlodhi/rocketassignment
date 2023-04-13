@@ -13,7 +13,7 @@ const dispatch = useDispatch();
     dispatch(clearCart())
    }
   return (
-    <div className="checkoutitem">
+    <div className="checkoutitem" style={{paddingTop: 90 }} >
       <h1>Total Products - {cartItems.length} </h1>
        <button className="clearAll" onClick={()=>handleClearCart()}>Clear Cart</button>
         {
